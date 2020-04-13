@@ -6,8 +6,8 @@ const covid19ImpactEstimator = (data) => {
    const { periodType } = input;
    const { timeToElapse } = input;
 
-const { region:{ avgDailyIncomeInUSD: dailyIncome } } = input;
-const { region: { avgDailyIncomePopulation: population } } = input;
+// const { region:{ avgDailyIncomeInUSD: dailyIncome } } = input;
+// const { region: { avgDailyIncomePopulation: population } } = input;
   
 impact.infectionsByRequestedTime = impact.currentlyInfected * parseInt(Math.pow(2,timeToElapse))
 
