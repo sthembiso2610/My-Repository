@@ -6,6 +6,7 @@ const covid19ImpactEstimator = (data) => {
     const { timeToElapse } = input;
     impact.infectionsByRequestedTime = impact.currentlyInfected * (2 ** timeToElapse);
 
+    
     return {
         data: input,
         impact: {},
